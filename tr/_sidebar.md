@@ -1,17 +1,16 @@
-- [🏠 Ana Sayfa](/tr/)
+- [Ana Sayfa](#/tr/)
+- [English Version](#/en/)
 
 ---
 
 - **Giriş**
-  - [Proje Genel Bakış](/tr/introduction/overview)
-  - [Donanım Gereksinimleri](/tr/introduction/hardware)
+  - [Proje Genel Bakış](#/tr/introduction/overview)
+  - [Proje Hedefleri](#/tr/introduction/goals)
 
-- **Arduino**
-  - [Arduino Temelleri](/tr/arduino/basics)
+- **Kurulum**
+  - [Donanım Gereksinimleri](#/tr/introduction/hardware)
+  - [Yazılım Kurulumu](#/tr/introduction/software)
 
-- **Raspberry Pi**
-  - [RPi Kurulumu](/tr/raspberrypi/setup)
-
----
-
-- [🇬🇧 English](/en/)
+- **Uygulamalar**
+  - [Arduino Temelleri](#/tr/arduino/basics)
+  - [Raspberry Pi Kurulumu](#/tr/raspberrypi/setup)

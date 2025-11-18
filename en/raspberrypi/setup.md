@@ -1,15 +1,15 @@
-# Raspberry Pi Kurulumu
+# Raspberry Pi Setup
 
-## Temel İmaj
+## Base Image
 
-1. Ubuntu 24.04 Server imajını microSD karta yazın.
-2. Cihazı başlatıp ilk kurulum sihirbazını tamamlayın.
-3. Paketleri güncelleyin:
+1. Flash Ubuntu 24.04 Server to the microSD card.
+2. Boot and complete the first-run wizard.
+3. Update packages:
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
-## Sistem Ayarları
+## System Tweaks
 
 ```bash
 sudo timedatectl set-timezone Europe/Istanbul
@@ -17,14 +17,14 @@ sudo systemctl enable ssh
 sudo apt install net-tools vim tmux bash-completion
 ```
 
-`~/.bashrc` dosyasına şu satırları ekleyin:
+Add these lines to `~/.bashrc` for ROS2:
 ```bash
 source /opt/ros/jazzy/setup.bash
 source ~/ros2_ws/install/setup.bash
 export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 ```
 
-## Workspace Oluşturma
+## Workspace
 
 ```bash
 mkdir -p ~/ros2_ws/src
@@ -32,9 +32,9 @@ cd ~/ros2_ws
 colcon build --symlink-install
 ```
 
-## Otomatik Başlatma Servisi
+## Autostart Services
 
-`/etc/systemd/system/pathoven_bringup.service` dosyasını oluşturun:
+Create `/etc/systemd/system/pathoven_bringup.service`:
 ```ini
 [Unit]
 Description=Pathoven Bringup
@@ -56,11 +56,11 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now pathoven_bringup.service
 ```
 
-## Doğrulama
+## Verification
 
 ```bash
 ros2 topic list
 ros2 node list
 ```
 
-`/scan`, `/ekf/odom` ve `/cmd_vel` gibi topic'leri görmelisiniz.
+You should see topics such as `/scan`, `/ekf/odom`, and `/cmd_vel`.

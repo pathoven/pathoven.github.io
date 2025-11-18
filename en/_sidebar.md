@@ -1,17 +1,16 @@
-- [🏠 Home](/en/)
+- [Home](#/en/)
+- [Türkçe İçerik](#/tr/)
 
 ---
 
 - **Introduction**
-  - [Project Overview](/en/introduction/overview)
-  - [Hardware Requirements](/en/introduction/hardware)
+  - [Project Overview](#/en/introduction/overview)
+  - [Project Goals](#/en/introduction/goals)
 
-- **Arduino**
-  - [Arduino Basics](/en/arduino/basics)
+- **Setup**
+  - [Hardware Requirements](#/en/introduction/hardware)
+  - [Software Setup](#/en/introduction/software)
 
-- **Raspberry Pi**
-  - [RPi Setup](/en/raspberrypi/setup)
-
----
-
-- [🇹🇷 Türkçe](/tr/)
+- **Hands-on**
+  - [Arduino Basics](#/en/arduino/basics)
+  - [Raspberry Pi Setup](#/en/raspberrypi/setup)

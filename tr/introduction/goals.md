@@ -1,116 +1,54 @@
 # Proje Hedefleri
 
-## 🎯 Ana Hedefler
+Bu proje, ROS2 ekosistemini uçtan uca öğrenebilmeniz için planlandı. Her aşama, araca yeni bir yetenek kazandırırken size ölçülebilir bir teknik kazanım sağlar.
 
-### 1. Eğitim ve Öğrenme
-Bu proje ile şunları öğreneceksiniz:
+## Öğrenme Hedefleri
 
-- ✅ **ROS2 Temellerinin Anlaşılması**
-  - Topics, Nodes, Services kavramları
-  - Launch files ve package yapısı
-  - ROS2 araçlarının kullanımı
+### 1. Temeller
+- ROS2 düğüm grafikleri, topic, service ve parameter yapısını kavrayın.
+- Colcon ile tekrar üretilebilir workspace'ler oluşturun.
+- Dokümantasyon ve firmware için Git tabanlı akışları uygulayın.
 
-- ✅ **Robotik Kinematik**
-  - Ackermann steering geometrisi
-  - Odometry hesaplamaları
-  - TF (Transform) sistemi
+### 2. Gömülü Kontrol
+- Arduino üzerinde motor sürme ve encoder okuma kodlarını yazın.
+- IMU ve encoder verisini seri hat üzerinden ROS2 topiclerine aktarın.
+- İletişim koptuğunda aracı güvenli şekilde durduran watchdog'lar tasarlayın.
 
-- ✅ **SLAM (Simultaneous Localization and Mapping)**
-  - Laser scan verilerinin işlenmesi
-  - Graph-based SLAM algoritmaları
-  - Loop closure ve harita optimizasyonu
+### 3. Algılama ve Navigasyon
+- SLAM Toolbox'ı iç ve dış mekânda kararlı çalışacak şekilde yapılandırın.
+- Nav2 planlayıcılarıyla (Smac, Theta*) waypoint görevleri oluşturun.
+- LiDAR engel verisini kullanarak lokal costmap ayarlarını optimize edin.
 
-- ✅ **Otonom Navigasyon**
-  - Path planning algoritmaları
-  - Obstacle avoidance
-  - Behavior Trees
+### 4. Operasyon
+- Diagnostics tabanlı sağlık panoları oluşturun.
+- Log alma ve rosbag kayıt süreçlerini otomatikleştirin.
+- Stack'i SSH ve tmux ile başsız olarak dağıtın.
 
-### 2. Teknik Beceriler
+## Kilometre Taşları
 
-**Yazılım Geliştirme:**
-- Python ve C++ programlama
-- ROS2 node geliştirme
-- Web arayüzü (React, Socket.IO)
-- Git ve versiyon kontrolü
+| Faz | Hedef | Ölçülebilir Sonuç |
+| --- | --- | --- |
+| MVP | Manuel sürüş + canlı LiDAR | Web arayüzü aracı hareket ettirir ve taramaları gösterir |
+| Haritalama | Tutarlı SLAM haritaları | Kaydedilen harita yeniden yüklendiğinde <5 cm sapma |
+| Otonomi | Waypoint navigasyonu | Nav2 iç mekânda üç noktalı görevi tamamlar |
+| Güvenilirlik | Saha kullanımı | Sağlık paneli 30 dk testte yeşil kalır |
 
-**Donanım Entegrasyonu:**
-- Arduino programlama
-- Serial iletişim
-- Sensor entegrasyonu (LiDAR)
-- Motor kontrolü ve sürücüler
+## Kontrol Listesi
 
-**Sistem Yönetimi:**
-- Linux sistem yönetimi
-- SSH ve uzaktan erişim
-- Performans optimizasyonu
-- Debugging ve troubleshooting
+- [ ] Araç dashboard üzerinden arm/disarm ediliyor.
+- [ ] RPLidar en az 3 Hz hızla ve <%2 kayıpla yayın yapıyor.
+- [ ] EKF, 50 Hz hızında birleştirilmiş odometri üretiyor.
+- [ ] Nav2 kare rotayı iki kez müdahalesiz tamamlıyor.
+- [ ] Tüm düğümler systemd servisleriyle kendini yeniden başlatıyor.
 
-## 📚 Öğrenme Çıktıları
+## Önerilen Çalışma Sırası
 
-### Başlangıç Seviyesi
-1. Arduino ile temel motor kontrolü
-2. Raspberry Pi kurulumu ve yapılandırma
-3. ROS2 workspace oluşturma
-4. Basit ROS2 node'ları çalıştırma
-
-### Orta Seviye
-1. Custom ROS2 package geliştirme
-2. URDF robot modeli oluşturma
-3. LiDAR verilerini okuma ve işleme
-4. SLAM ile harita oluşturma
-
-### İleri Seviye
-1. Otonom navigasyon implementasyonu
-2. Web arayüzü ile kontrol
-3. Performans optimizasyonu
-4. Multi-robot sistemler (gelecek)
-
-## 🏆 Proje Tamamlama Kriterleri
-
-### Minimum Viable Product (MVP)
-- ✅ Robot hareket edebiliyor
-- ✅ LiDAR verileri alınabiliyor
-- ✅ Temel SLAM çalışıyor
-- ✅ Manuel kontrol mevcut
-
-### Full Version
-- ✅ Otonom haritalama
-- ✅ Kaydedilmiş haritada navigasyon
-- ✅ Web GUI ile kontrol
-- ✅ Obstacle avoidance
-
-### Advanced Features (Opsiyonel)
-- ⏳ Multi-waypoint navigation
-- ⏳ Voice control
-- ⏳ Object detection
-- ⏳ Fleet management
-
-## 💼 Kariyer Gelişimi
-
-Bu projeyi tamamladığınızda:
-
-**Robotik Pozisyonları:**
-- ROS Developer
-- Robotics Engineer
-- Autonomous Systems Engineer
-- SLAM Engineer
-
-**İlgili Alanlarda:**
-- IoT Developer
-- Embedded Systems Engineer
-- Control Systems Engineer
-- Computer Vision Engineer
-
-## 🔄 Sonraki Adımlar
-
-Projeye başlamaya hazır mısınız?
-
-1. [Donanım Gereksinimleri](#/tr/introduction/hardware) - Nelere ihtiyacınız var
-2. [Yazılım Kurulumu](#/tr/introduction/software) - Sistemi kurun
-3. [Arduino Temelleri](#/tr/arduino/basics) - İlk kodları yazın
+1. Aracı fiziksel olarak toplayın ve motor yönlerini doğrulayın.
+2. Yazılım kurulumunu yapıp ROS2 workspace'ini ayağa kaldırın.
+3. Küçük bir alanda SLAM çalıştırıp harita dışa aktarın.
+4. Direksiyon servosu için PID değerlerini ayarlayın.
+5. Çoklu waypoint görevleri gibi üst seviye davranışlar ekleyin.
 
 ---
 
-**💡 İpucu:** Bu projeyi kendi hızınızda ilerletin. Her bölümü bitirdikten sonra test edin ve anlayın. Acele etmeyin!
-
-
+Sırada [Arduino Temelleri](#/tr/arduino/basics) sayfası var; kontrol yazılımını buradan yükleyin.
