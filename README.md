@@ -6,8 +6,8 @@
 
 Select the language you want to follow the build guide with:
 
-- [English Documentation](#/en/)
-- [Türkçe Dokümantasyon](#/tr/)
+- [English Documentation](/en/)
+- [Türkçe Dokümantasyon](/tr/)
 
 ---
 
