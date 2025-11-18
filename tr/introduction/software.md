@@ -76,4 +76,4 @@ sudo usermod -a -G dialout $USER
 
 ---
 
-Şimdi [Proje Hedefleri](#/tr/introduction/goals) sayfasına geçebilirsiniz.
+Şimdi [Proje Hedefleri](/tr/introduction/goals) sayfasına geçebilirsiniz.

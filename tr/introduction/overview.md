@@ -26,4 +26,4 @@ Pathoven Drive, ROS2 Jazzy ile çalışan küçük ölçekli bir Ackermann araç
 
 ---
 
-Parça listesine geçmek için [Donanım Gereksinimleri](#/tr/introduction/hardware) sayfasını ziyaret edin.
+Parça listesine geçmek için [Donanım Gereksinimleri](/tr/introduction/hardware) sayfasını ziyaret edin.

@@ -51,4 +51,4 @@ Bu proje, ROS2 ekosistemini uçtan uca öğrenebilmeniz için planlandı. Her a�
 
 ---
 
-Sırada [Arduino Temelleri](#/tr/arduino/basics) sayfası var; kontrol yazılımını buradan yükleyin.
+Sırada [Arduino Temelleri](/tr/arduino/basics) sayfası var; kontrol yazılımını buradan yükleyin.

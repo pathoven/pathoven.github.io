@@ -26,4 +26,4 @@ Pathoven Drive is our open hardware testbed that demonstrates how ROS2 Jazzy can
 
 ---
 
-Continue with the [hardware requirements](#/en/introduction/hardware) when you are ready to source parts.
+Continue with the [hardware requirements](/en/introduction/hardware) when you are ready to source parts.

@@ -11,12 +11,12 @@ Pathoven Drive, ROS2 Jazzy ile çalışan otonom bir 1/10 ölçekli RC araç pro
 
 ## İzlemeniz Önerilen Sıra
 
-1. [Proje Genel Bakış](#/tr/introduction/overview)
-2. [Donanım Gereksinimleri](#/tr/introduction/hardware)
-3. [Yazılım Kurulumu](#/tr/introduction/software)
-4. [Proje Hedefleri](#/tr/introduction/goals)
-5. [Arduino Temelleri](#/tr/arduino/basics)
-6. [Raspberry Pi Kurulumu](#/tr/raspberrypi/setup)
+1. [Proje Genel Bakış](/tr/introduction/overview)
+2. [Donanım Gereksinimleri](/tr/introduction/hardware)
+3. [Yazılım Kurulumu](/tr/introduction/software)
+4. [Proje Hedefleri](/tr/introduction/goals)
+5. [Arduino Temelleri](/tr/arduino/basics)
+6. [Raspberry Pi Kurulumu](/tr/raspberrypi/setup)
 
 ---
 

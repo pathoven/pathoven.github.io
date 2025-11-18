@@ -30,4 +30,4 @@ Publish commands from ROS2 by writing the formatted line to `/dev/ttyUSB0`. Each
 
 ## Next Steps
 
-Once firmware is running, go back to the Raspberry Pi and continue with the [setup guide](#/en/raspberrypi/setup).
+Once firmware is running, go back to the Raspberry Pi and continue with the [setup guide](/en/raspberrypi/setup).

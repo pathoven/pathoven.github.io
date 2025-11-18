@@ -11,12 +11,12 @@ The Pathoven Drive project documents how we built an autonomous 1/10 RC car powe
 
 ## Recommended Order
 
-1. [Project Overview](#/en/introduction/overview)
-2. [Hardware Requirements](#/en/introduction/hardware)
-3. [Software Setup](#/en/introduction/software)
-4. [Project Goals](#/en/introduction/goals)
-5. [Arduino Basics](#/en/arduino/basics)
-6. [Raspberry Pi Setup](#/en/raspberrypi/setup)
+1. [Project Overview](/en/introduction/overview)
+2. [Hardware Requirements](/en/introduction/hardware)
+3. [Software Setup](/en/introduction/software)
+4. [Project Goals](/en/introduction/goals)
+5. [Arduino Basics](/en/arduino/basics)
+6. [Raspberry Pi Setup](/en/raspberrypi/setup)
 
 ---
 

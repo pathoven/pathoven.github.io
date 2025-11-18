@@ -30,4 +30,4 @@ ROS2 tarafında `/dev/ttyUSB0` portuna her satırı `\n` ile biten bu formatta p
 
 ## Sonraki Adım
 
-Firmware çalıştıktan sonra Raspberry Pi üzerindeki [kurulum rehberine](#/tr/raspberrypi/setup) geri dönün.
+Firmware çalıştıktan sonra Raspberry Pi üzerindeki [kurulum rehberine](/tr/raspberrypi/setup) geri dönün.

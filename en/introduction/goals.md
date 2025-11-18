@@ -51,4 +51,4 @@ The project is engineered as a full-stack learning journey. Each milestone adds 
 
 ---
 
-Next up: [Arduino Basics](#/en/arduino/basics) to flash the control firmware.
+Next up: [Arduino Basics](/en/arduino/basics) to flash the control firmware.

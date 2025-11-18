@@ -23,4 +23,4 @@
 
 ---
 
-Continue with the [software setup](#/en/introduction/software) to prepare Ubuntu, ROS2, and supporting tools.
+Continue with the [software setup](/en/introduction/software) to prepare Ubuntu, ROS2, and supporting tools.

@@ -23,4 +23,4 @@
 
 ---
 
-Ubuntu, ROS2 ve yardımcı araçları kurmak için [Yazılım Kurulumu](#/tr/introduction/software) sayfasına geçin.
+Ubuntu, ROS2 ve yardımcı araçları kurmak için [Yazılım Kurulumu](/tr/introduction/software) sayfasına geçin.
