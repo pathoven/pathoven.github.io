@@ -106,3 +106,4 @@ sudo usermod -a -G dialout $USER
 
 **Sonraki:** [Proje Hedefleri →](#/tr/introduction/goals)
 
+

@@ -113,3 +113,4 @@ Projeye başlamaya hazır mısınız?
 
 **💡 İpucu:** Bu projeyi kendi hızınızda ilerletin. Her bölümü bitirdikten sonra test edin ve anlayın. Acele etmeyin!
 
+
